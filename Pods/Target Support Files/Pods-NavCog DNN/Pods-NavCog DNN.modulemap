@@ -1,0 +1,6 @@
+framework module Pods_NavCog_DNN {
+  umbrella header "Pods-NavCog DNN-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		395272EF59EA97C627F3DBFA /* Pods_NavCog_DNN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34356CB2B607720F89B4CA2 /* Pods_NavCog_DNN.framework */; };
 		83A6555F23851A1800112A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6555E23851A1800112A01 /* AppDelegate.swift */; };
 		83A6556123851A1800112A01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6556023851A1800112A01 /* SceneDelegate.swift */; };
 		83A6556323851A1800112A01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A6556223851A1800112A01 /* ViewController.swift */; };
 		83A6556623851A1800112A01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A6556423851A1800112A01 /* Main.storyboard */; };
 		83A6556823851A1900112A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A6556723851A1900112A01 /* Assets.xcassets */; };
 		83A6556B23851A1900112A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A6556923851A1900112A01 /* LaunchScreen.storyboard */; };
+		83C66A4B2387D5AF00E83EAF /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C66A4A2387D5AF00E83EAF /* Classifier.swift */; };
+		83C66A4D2387E26D00E83EAF /* mnist.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 83C66A4C2387E26C00E83EAF /* mnist.tflite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03336AAB2CBAFD8CB4D9934F /* Pods-NavCog DNN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavCog DNN.debug.xcconfig"; path = "Target Support Files/Pods-NavCog DNN/Pods-NavCog DNN.debug.xcconfig"; sourceTree = "<group>"; };
 		83A6555B23851A1800112A01 /* NavCog DNN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NavCog DNN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A6555E23851A1800112A01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83A6556023851A1800112A01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		83A6556723851A1900112A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A6556A23851A1900112A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83A6556C23851A1900112A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C66A4A2387D5AF00E83EAF /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		83C66A4C2387E26C00E83EAF /* mnist.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mnist.tflite; sourceTree = "<group>"; };
+		DE8DE5B2BE392D725E48E1A3 /* Pods-NavCog DNN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavCog DNN.release.xcconfig"; path = "Target Support Files/Pods-NavCog DNN/Pods-NavCog DNN.release.xcconfig"; sourceTree = "<group>"; };
+		E34356CB2B607720F89B4CA2 /* Pods_NavCog_DNN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavCog_DNN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395272EF59EA97C627F3DBFA /* Pods_NavCog_DNN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				83A6555D23851A1800112A01 /* NavCog DNN */,
 				83A6555C23851A1800112A01 /* Products */,
+				9C9529338983190A50026833 /* Pods */,
+				E550724B933F9D9EAE5CB7C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +67,34 @@
 		83A6555D23851A1800112A01 /* NavCog DNN */ = {
 			isa = PBXGroup;
 			children = (
+				83C66A4C2387E26C00E83EAF /* mnist.tflite */,
 				83A6555E23851A1800112A01 /* AppDelegate.swift */,
 				83A6556023851A1800112A01 /* SceneDelegate.swift */,
 				83A6556223851A1800112A01 /* ViewController.swift */,
+				83C66A4A2387D5AF00E83EAF /* Classifier.swift */,
 				83A6556423851A1800112A01 /* Main.storyboard */,
 				83A6556723851A1900112A01 /* Assets.xcassets */,
 				83A6556923851A1900112A01 /* LaunchScreen.storyboard */,
 				83A6556C23851A1900112A01 /* Info.plist */,
 			);
 			path = "NavCog DNN";
+			sourceTree = "<group>";
+		};
+		9C9529338983190A50026833 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03336AAB2CBAFD8CB4D9934F /* Pods-NavCog DNN.debug.xcconfig */,
+				DE8DE5B2BE392D725E48E1A3 /* Pods-NavCog DNN.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E550724B933F9D9EAE5CB7C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E34356CB2B607720F89B4CA2 /* Pods_NavCog_DNN.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83A6556F23851A1900112A01 /* Build configuration list for PBXNativeTarget "NavCog DNN" */;
 			buildPhases = (
+				76F8576A986A01E893D48D9E /* [CP] Check Pods Manifest.lock */,
 				83A6555723851A1800112A01 /* Sources */,
 				83A6555823851A1800112A01 /* Frameworks */,
 				83A6555923851A1800112A01 /* Resources */,
@@ -126,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A6556B23851A1900112A01 /* LaunchScreen.storyboard in Resources */,
+				83C66A4D2387E26D00E83EAF /* mnist.tflite in Resources */,
 				83A6556823851A1900112A01 /* Assets.xcassets in Resources */,
 				83A6556623851A1800112A01 /* Main.storyboard in Resources */,
 			);
@@ -133,11 +165,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76F8576A986A01E893D48D9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NavCog DNN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83A6555723851A1800112A01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C66A4B2387D5AF00E83EAF /* Classifier.swift in Sources */,
 				83A6556323851A1800112A01 /* ViewController.swift in Sources */,
 				83A6555F23851A1800112A01 /* AppDelegate.swift in Sources */,
 				83A6556123851A1800112A01 /* SceneDelegate.swift in Sources */,
@@ -282,6 +340,7 @@
 		};
 		83A6557023851A1900112A01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03336AAB2CBAFD8CB4D9934F /* Pods-NavCog DNN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +359,7 @@
 		};
 		83A6557123851A1900112A01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8DE5B2BE392D725E48E1A3 /* Pods-NavCog DNN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
